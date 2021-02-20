@@ -299,7 +299,7 @@ describe('You’re Really Repeating Yourself...Part 2 (Case Sensitive)', functio
 });
 
 
-describe.skip('Translate This', function() {
+describe('Translate This', function() {
 
   it('translates the list of song titles', function() {
     const spanishTitles = ['un dia', 'soltera', 'vete', 'la canción'];

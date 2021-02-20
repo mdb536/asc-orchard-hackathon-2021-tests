@@ -138,9 +138,18 @@ const howRepetitiveAreYou = (lyrics, word) => {
   return count;
 };
 
-const translateThis = (titles) => {
+const translateThis = (arr) => {
   const spanishToEnglish = SPANISH_TO_ENGLISH;
-  // insert code
+  let total = [];
+  arr.forEach(w => {
+    let words = w.split(' ');
+    let translated = words.map(word => {
+       return spanishToEnglish[word];
+    });
+    
+    total.push(translated.join(' '));
+  });
+  return total;
 };
 
 const getSingles = (trackList = TRACK_LIST) => {
