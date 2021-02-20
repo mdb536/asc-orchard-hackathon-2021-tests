@@ -140,7 +140,7 @@ describe('Validate Email - Part 1', function() {
 });
 
 
-describe.skip('Validate Email - Part 2', function() {
+describe('Validate Email - Part 2', function() {
 
   it('recognizes a valid email', function() {
     assert.strictEqual(

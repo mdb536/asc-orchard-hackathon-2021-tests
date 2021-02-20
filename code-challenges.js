@@ -61,7 +61,18 @@ const validateEmail = (email) => {
 };
 
 const validateEmailWithMessage = (email) => {
-  // insert code
+  let splitted = email.split('@');
+  if (splitted.length == 1) {
+    // console.log("Missing @ symbol >>> 'Invalid email: missing @ symbol'")
+    return 'Invalid email: missing @ symbol';
+  } 
+  if (!emailEndsCorrectly(email)) {
+    return 'Invalid email: email address should end with .com, .edu, .net, or .org';
+  }
+  if (splitted[0] == '') {
+    return 'Invalid email: missing recipient name';
+  }
+  return 'Valid email';
 };
 
 const getInitials = (name) => {
