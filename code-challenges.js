@@ -17,8 +17,8 @@ const mostViewsThreeVideos = (v1, v2, v3) => {
   const views = [v1, v2, v3];
   
   let mViews = v1;
-  for (let i = 0; i < views.length - 1; i++) {
-     mViews = Math.max(views[i], views[i + 1]);
+  for (let i = 0; i < views.length; i++) {
+     mViews = Math.max(views[i], mViews);
   }
   
   return mViews;
