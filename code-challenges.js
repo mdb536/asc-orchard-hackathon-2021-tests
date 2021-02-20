@@ -164,7 +164,14 @@ const getSingles = (trackList = TRACK_LIST) => {
 };
 
 const getUniqueArtists = (trackList = TRACK_LIST) => {
-  // insert code
+  let artists = [];
+  for (track of trackList) {
+    const existingArtist = artists.includes(track.artist);
+    if (!existingArtist) {
+      artists.push(track.artist);
+    }
+  }
+  return artists;
 };
 
 const getMostStreamedTrack = (trackList = TRACK_LIST) => {

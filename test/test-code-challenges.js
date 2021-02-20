@@ -320,7 +320,7 @@ describe('The Code is Totally Buggin - Part 1 (Singles)', function() {
 });
 
 
-describe.skip('The Code is Totally Buggin - Part 2 (Unique Artists)', function() {
+describe('The Code is Totally Buggin - Part 2 (Unique Artists)', function() {
 
   it('returns a list of unique artists from the track list', function() {
     assert.deepStrictEqual(getUniqueArtists(), ["Jorja Smith", "BTS", "Ozuna"]);
