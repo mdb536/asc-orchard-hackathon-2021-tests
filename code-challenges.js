@@ -153,7 +153,14 @@ const translateThis = (arr) => {
 };
 
 const getSingles = (trackList = TRACK_LIST) => {
-  // insert code
+  let singles = [];
+  for (track of trackList) {
+    if (track.type === 'single') {
+    singles.push(track.title);
+    }
+  
+  }
+  return singles.join(', ');
 };
 
 const getUniqueArtists = (trackList = TRACK_LIST) => {

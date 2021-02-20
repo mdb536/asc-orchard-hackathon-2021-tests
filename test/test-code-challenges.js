@@ -311,7 +311,7 @@ describe('Translate This', function() {
 });
 
 
-describe.skip('The Code is Totally Buggin - Part 1 (Singles)', function() {
+describe('The Code is Totally Buggin - Part 1 (Singles)', function() {
 
   it('returns a string of comma-separated singles from the track list', function() {
     assert.strictEqual(getSingles(), 'Dynamite, Be Honest');
