@@ -329,7 +329,7 @@ describe('The Code is Totally Buggin - Part 2 (Unique Artists)', function() {
 });
 
 
-describe.skip('The Code is Totally Buggin - Part 3 (Most Streamed Track)', function() {
+describe('The Code is Totally Buggin - Part 3 (Most Streamed Track)', function() {
 
   it('returns the most streamed track from the track list', function() {
     const expectation = { title: 'Dynamite', artist: 'BTS', type: 'single', numberOfStreams: 1000 };

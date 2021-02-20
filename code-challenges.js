@@ -175,7 +175,16 @@ const getUniqueArtists = (trackList = TRACK_LIST) => {
 };
 
 const getMostStreamedTrack = (trackList = TRACK_LIST) => {
-  // insert code
+  let indexOfHighestStreams = 0;
+  let highestStreams = trackList[0].numberOfStreams;
+  for (let i = 0; i < trackList.length; i++) {
+    currentTrack = trackList[i];
+    if (currentTrack.numberOfStreams > highestStreams) {
+      highestStreams = currentTrack.numberOfStreams;
+      indexOfHighestStreams = i;
+    }
+  }
+  return trackList[indexOfHighestStreams];
 };
 
 module.exports = {
