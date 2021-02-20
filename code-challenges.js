@@ -13,8 +13,15 @@ const areYouLil = (name) => {
   return name.slice(0, 4) == 'Lil ';
 };
 
-const mostViewsThreeVideos = (videoOneViews, videoTwoViews, videoThreeViews) => {
-  // insert code
+const mostViewsThreeVideos = (v1, v2, v3) => {
+  const views = [v1, v2, v3];
+  
+  let mViews = v1;
+  for (let i = 0; i < views.length - 1; i++) {
+     mViews = Math.max(views[i], views[i + 1]);
+  }
+  
+  return mViews;
 };
 
 const mostViews = (videoViews) => {
