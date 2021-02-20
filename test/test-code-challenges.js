@@ -283,7 +283,7 @@ describe('You’re Really Repeating Yourself... Part 1', function() {
 });
 
 
-describe.skip('You’re Really Repeating Yourself...Part 2 (Case Sensitive)', function() {
+describe('You’re Really Repeating Yourself...Part 2 (Case Sensitive)', function() {
 
   it('returns the correct number of lyrics: "work"', function() {
     const lyrics = `Work, work, work, work, work, work
