@@ -120,7 +120,7 @@ describe('Most YouTube Views - Part 2', function() {
 });
 
 
-describe.skip('Validate Email - Part 1', function() {
+describe('Validate Email - Part 1', function() {
   it('recognizes a valid email', function() {
     assert.strictEqual(validateEmail('notoriousbig@badboy.com').toLowerCase(), 'valid email');
   });

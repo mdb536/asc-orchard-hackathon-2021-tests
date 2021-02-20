@@ -35,8 +35,29 @@ const mostViews = (views) => {
 };
 
 
+const emailEndsCorrectly = (email) => {
+  const end = ['.com', '.edu', '.net', '.org'];
+  for (const e of end) {
+    if (email.endsWith(e)) {
+      return true;
+    }
+  }
+  return false;
+};
+
 const validateEmail = (email) => {
-  // insert code
+  let splitted = email.split('@');
+  if (splitted.length == 1) {
+    // console.log("Missing @ symbol >>> 'Invalid email: missing @ symbol'")
+    return 'Invalid email';
+  } 
+  if (!emailEndsCorrectly(email)) {
+    return 'Invalid email';
+  }
+  if (splitted[0] == '') {
+    return 'Invalid email';
+  }
+  return 'Valid email';
 };
 
 const validateEmailWithMessage = (email) => {
