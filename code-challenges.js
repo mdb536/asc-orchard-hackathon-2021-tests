@@ -10,7 +10,7 @@ const eresBadBunny = (str) => {
 };
 
 const areYouLil = (name) => {
-  // insert code
+  return name.slice(0, 3) == 'Lil';
 };
 
 const mostViewsThreeVideos = (videoOneViews, videoTwoViews, videoThreeViews) => {

@@ -61,7 +61,7 @@ describe('¿Are You Bad Bunny? - Bonus (Case Insensitive)', function() {
 });
 
 
-describe.skip('Lil Rapper', function() {
+describe('Lil Rapper', function() {
 
   it('is Lil (Lil Wayne)', function() {
     assert.strictEqual(areYouLil('Lil Wayne'), true);
