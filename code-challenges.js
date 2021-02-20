@@ -24,9 +24,16 @@ const mostViewsThreeVideos = (v1, v2, v3) => {
   return mViews;
 };
 
-const mostViews = (videoViews) => {
-  // insert code
+const mostViews = (views) => {
+  
+  let mViews = 0;
+  for (let i = 0; i < views.length; i++) {
+     mViews = Math.max(views[i], mViews);
+  }
+  
+  return mViews;
 };
+
 
 const validateEmail = (email) => {
   // insert code

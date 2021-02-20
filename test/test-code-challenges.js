@@ -103,7 +103,7 @@ describe('Most YouTube Views - Part 1', function() {
 });
 
 
-describe.skip('Most YouTube Views - Part 2', function() {
+describe('Most YouTube Views - Part 2', function() {
 
   it('returns the most views - 555000', function() {
     assert.strictEqual(mostViews([100, 555000, 2222]), 555000);
