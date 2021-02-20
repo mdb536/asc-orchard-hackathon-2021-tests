@@ -123,10 +123,19 @@ const getInitialsLongName = (name) => {
 //   let lastInitial = lastName.slice(0, 1).toUpperCase();
   
 //   return `${firstInitial}${lastInitial}`;
-}
+};
 
 const howRepetitiveAreYou = (lyrics, word) => {
-  // insert code
+  const lyricsArr = lyrics.split(" ");
+  let count = 0;
+  
+  lyricsArr.forEach((w) => {  
+    if (w.includes(word)) {
+      count++;
+    }
+  });
+  
+  return count;
 };
 
 const translateThis = (titles) => {

@@ -224,7 +224,7 @@ describe('Display an Artist’s Initials - Part 3 (Long Name)', function() {
 });
 
 
-describe.skip('You’re Really Repeating Yourself... Part 1', function() {
+describe('You’re Really Repeating Yourself... Part 1', function() {
 
   it('returns the correct number of lyrics: "drippin"', function() {
     const lyrics = `came through drippin' (drip drip)
