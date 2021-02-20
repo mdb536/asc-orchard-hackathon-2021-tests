@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 const { SPANISH_TO_ENGLISH, TRACK_LIST } = require('./constants.js')
 
-const newSingle = (single) => {
-  // insert code
+const newSingle = (songName) => {
+  return `New single ${songName} is dropping soon!`
 };
 
 const eresBadBunny = (name) => {
