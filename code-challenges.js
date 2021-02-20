@@ -87,8 +87,20 @@ const getInitials = (name) => {
 };
 
 const getInitialsOneName = (name) => {
-  // insert code
-};
+  let splitName = name.split(' ');
+  let firstName = splitName[0];
+  let lastName = splitName[1];
+  
+  if (!lastName) {
+    let firstInitial = firstName.slice(0, 2).toUpperCase();
+    return `${firstInitial}`;
+  }
+  
+  let firstInitial = firstName.slice(0, 1).toUpperCase();
+  let lastInitial = lastName.slice(0, 1).toUpperCase();
+  
+  return `${firstInitial}${lastInitial}`;
+}
 
 const getInitialsLongName = (name) => {
   // insert code

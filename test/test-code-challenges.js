@@ -190,7 +190,7 @@ describe('Display an Artist’s Initials - Part 1', function() {
 });
 
 
-describe.skip('Display an Artist’s Initials - Part 2 (One Name)', function() {
+describe('Display an Artist’s Initials - Part 2 (One Name)', function() {
 
   it('returns the correct initials: Ozuna', function() {
     assert.strictEqual(getInitialsOneName('Ozuna'), 'OZ');
