@@ -76,7 +76,14 @@ const validateEmailWithMessage = (email) => {
 };
 
 const getInitials = (name) => {
-  // insert code
+  let splitName = name.split(' ');
+  let firstName = splitName[0];
+  let lastName = splitName[1];
+  
+  let firstInitial = firstName.slice(0, 1).toUpperCase();
+  let lastInitial = lastName.slice(0, 1).toUpperCase();
+  
+  return `${firstInitial}${lastInitial}`;
 };
 
 const getInitialsOneName = (name) => {

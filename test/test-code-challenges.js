@@ -173,7 +173,7 @@ describe('Validate Email - Part 2', function() {
 });
 
 
-describe.skip('Display an Artist’s Initials - Part 1', function() {
+describe('Display an Artist’s Initials - Part 1', function() {
 
   it('returns the correct initials: Jorja Smith', function() {
     assert.strictEqual(getInitials('Jorja Smith'), 'JS');
