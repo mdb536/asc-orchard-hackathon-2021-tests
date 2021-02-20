@@ -207,7 +207,7 @@ describe('Display an Artist’s Initials - Part 2 (One Name)', function() {
 });
 
 
-describe.skip('Display an Artist’s Initials - Part 3 (Long Name)', function() {
+describe('Display an Artist’s Initials - Part 3 (Long Name)', function() {
 
   it('returns the correct initials: Megan Thee Stallion', function() {
     assert.strictEqual(getInitialsLongName('Megan Thee Stallion'), 'MTS');
