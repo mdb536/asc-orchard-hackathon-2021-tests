@@ -5,8 +5,8 @@ const newSingle = (songName) => {
   return `New single ${songName} is dropping soon!`
 };
 
-const eresBadBunny = (name) => {
-  // insert code
+const eresBadBunny = (str) => {
+  return str.toLowerCase() == "bad bunny";
 };
 
 const areYouLil = (name) => {

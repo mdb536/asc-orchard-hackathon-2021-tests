@@ -35,7 +35,7 @@ describe('Hype Machine', function() {
 });
 
 
-describe.skip('¿Are You Bad Bunny?', function() {
+describe('¿Are You Bad Bunny?', function() {
 
   it('is Bad Bunny', function() {
     assert.strictEqual(eresBadBunny('Bad Bunny'), true);
@@ -52,7 +52,7 @@ describe.skip('¿Are You Bad Bunny?', function() {
 });
 
 
-describe.skip('¿Are You Bad Bunny? - Bonus (Case Insensitive)', function() {
+describe('¿Are You Bad Bunny? - Bonus (Case Insensitive)', function() {
 
   it('is BAD BUNNY', function() {
     assert.strictEqual(eresBadBunny('BAD BUNNY'), true);
